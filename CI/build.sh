@@ -6,6 +6,7 @@
 rm -rf Matze*
 rm -rf *index*
 rm -rf *enigma_2_*
+rm -rf *enigma2-plugin-settings-matze-*
 
 wget --wait=3 -i links.txt
 
@@ -18,6 +19,7 @@ done
 rm -rf *.zip
 
 rename 's/_[^_]*$//' */
+rename 's/enigma_2_/enigma2-plugin-settings-matze-/' */
 
 find . -name '*satellites.xml*' -type f | xargs rm -f
 find . -name '*.url*' -type f | xargs rm -f
