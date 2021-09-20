@@ -5,6 +5,7 @@
 
 rm -rf Matze*
 rm -rf *index*
+rm -rf *enigma_2_*
 
 wget --wait=3 -i links.txt
 
