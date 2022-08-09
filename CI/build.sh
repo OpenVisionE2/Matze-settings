@@ -18,8 +18,8 @@ done
 
 rm -rf *.zip
 
-rename 's/_[^_]*$//' */
-rename 's/enigma_2_/enigma2-plugin-settings-matze-/' */
+rename -f 's/_[^_]*$//' */
+rename -f 's/enigma_2_/enigma2-plugin-settings-matze-/' */
 
 find . -name '*satellites.xml*' -type f | xargs rm -f
 find . -name '*.url*' -type f | xargs rm -f
